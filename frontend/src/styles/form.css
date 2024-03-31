@@ -1,0 +1,75 @@
+*{
+    font-weight: 400;
+}
+.login-signup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    column-gap: 40px;
+}
+
+.login-signup-container .svg-container .login-png{
+    width: 40vw;
+
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.login-signup-container .form-container form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.login-signup-container .form-container form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+} 
+
+.login-signup-container .form-container form div input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.651);
+    padding: 5px 10px;
+}
+
+.userName-lable{
+    height: 24px !important;
+}
+.login-signup-container .form-container form div label{
+    display: flex;
+    align-items: baseline;
+    height: 42px;
+    justify-content: space-between;
+    width: 93%;
+}
+.login-signup-container .form-container form div button{
+    width: 93%;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    background-color: #577D86;
+    color: white;
+    font-size: 16px;
+}
+
+.forget-text{
+    font-size: 12px;
+    text-decoration: underline;
+    color: #357887;
+    cursor: pointer;
+}
+.heading{
+    font-weight: 900;
+}
+

@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    justify-content: center ;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #87CBB9;
+    color: white;
+    
+}
+
+nav .menu-container{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+nav .search-bar{
+    outline: none;
+    width: 20vw;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+nav .menu-container div{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+nav #userId {
+    display: none;
+}
