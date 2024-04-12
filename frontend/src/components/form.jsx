@@ -24,6 +24,9 @@ function Form({ route, method }) {
                 navigate('/')
             }
             else {
+                const res = await api.post(route, { username: userName, email:userEmail, password: userPassword });
+                localStorage.setItem(ACCESS_TOKEN, res.data.access);
+                localStorage.setItem(REFRESH_TOKEN, res.data.refresh)
                 navigate("/login")
             }
         } catch (error) {
@@ -45,7 +48,10 @@ function Form({ route, method }) {
                         <label className='userName-lable' htmlFor="username">Username</label>
                         <input id='username' type="text" name='username' placeholder='Admin' value={userName} onChange={(e) => setUserName(e.target.value)} />
                     </div>
-                    {method === "login" ? <></> : <input type="email" name="email" id="email" value={userEmail} placeholder='Enter your email' onChange={(e) => setUserEmail(e.target.value)} />}
+                    {method === "login" ? <></> :<div>
+                        <label className='email-lable' htmlFor="email">Email</label>
+                        <input id='email' type='email' name='email' placeholder='Email' value={userEmail} onChange={(e) => setUserEmail(e.target.value)} />
+                    </div>}
                     <div>
                         <label className='pswd-lable' htmlFor="password"><p>Password</p>
                             <a className='forget-text'>Forgot?</a></label>

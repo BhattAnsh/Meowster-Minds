@@ -51,9 +51,10 @@ class createMedicalRecords(generics.ListCreateAPIView):
     def get_queryset(self):
         user = self.request.user
         return MedicalRecords.objects.filter(patient = user)
-    def create_querySet(self, serializer):
+    def perform_create(self, serializer):
+        print(self.request.data)
         if serializer.is_valid():
-            serializer.save(patient = self.request.user)
+            serializer.save(patient = self.request.user, patient_id = self.request.user.id)
         else:
             print(serializer.error)
 

@@ -25,6 +25,7 @@ function Navbar() {
     if (userData.length > 0) {
       const user = userData[0];
       setUserName(user.username);
+      setUserId(user.id)
     }
   }, [userData]);
   

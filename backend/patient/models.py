@@ -17,7 +17,7 @@ class AppointmentDetails(models.Model):
     status = models.CharField(max_length=100)
 
 class MedicalRecords(models.Model):
-    patient = models.OneToOneField(PatientDetails, on_delete=models.CASCADE, related_name="medical_history")
+    patient = models.ForeignKey(User, on_delete=models.CASCADE, related_name="patient_medical_details")
     allergies = models.TextField(blank=True)
     past_medical_conditions = models.TextField(blank=True)
     surgical_history = models.TextField(blank=True)

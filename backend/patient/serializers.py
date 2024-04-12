@@ -22,11 +22,13 @@ class AppointmentSerializer(serializers.ModelSerializer):
         model = AppointmentDetails
         fields = ["appointment_id", "patient", "appointment_date", "appointment_Time", "reason_for_visit", "status"]
 
+
 class MedicalRecordsSerializer(serializers.ModelSerializer):
     class Meta:
         model = MedicalRecords
         fields = ["patient", "allergies", "past_medical_conditions", "surgical_history", "family_medical_history"]
-        extra_kwargs = {"patient":{'read_only':True}}
+        extra_kwargs = {"patient": {'read_only': True}}
+
 
 
     

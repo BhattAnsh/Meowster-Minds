@@ -34,7 +34,7 @@
     width: 25vw;
 } 
 
-.login-signup-container .form-container form div input{
+.login-signup-container .form-container form div input, .email-field{
     width: 90%;
     height: 40px;
     border-radius: 5px;
@@ -71,5 +71,8 @@
 }
 .heading{
     font-weight: 900;
+}
+.email-lable{
+    height: 23px !important;
 }
 

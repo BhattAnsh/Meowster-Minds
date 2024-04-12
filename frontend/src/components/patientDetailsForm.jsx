@@ -2,6 +2,7 @@ import { useState, useEffect, React } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from '../api'
 import Navbar from './navbar'
+import "../styles/details.css"
 function DetailsForm() {
 
     // for normal details
@@ -15,28 +16,30 @@ function DetailsForm() {
     const [mSubmission, setMSubmission] = useState(false)
 
     const navigate = useNavigate()
-    const gettingUserId = () =>{
-        let id = document.getElementById('userId').value;
-        setUserId(id)
+    const gettingUserId = () => {
+        let id = document.getElementById('userId').innerHTML;
+        setUserId(id);
     }
-    useEffect(()=>{
-        gettingUserId()
-        console.log(userId)
+    
+    useEffect(() => {
+        gettingUserId();
     }, []);
+    
     const handlePatientSubmit = async (e) => {
-        setRoute('patient/details/');
         e.preventDefault();
         try {
-            const res = await api.post(route, { fullName: fullName, phoneNo: phoneNo, Gender: gender, Address: address, id:userId });
-            console.log(userId)
+            setRoute('patient/details/');
+            // Ensure userId is updated before making the API call
+            gettingUserId(); // Update userId state
+            const res = await api.post(route, { fullName: fullName, phoneNo: phoneNo, Gender: gender, Address: address, id: userId });
             localStorage.setItem(ACCESS_TOKEN, res.data.access);
-            localStorage.setItem(REFRESH_TOKEN, res.data.refresh)
+            localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
             navigate("/dashboard")
         } catch (error) {
             console.log(error)
         }
     }
-
+    
     // for medical history
     const [allergies, setAllergies] = useState("")
     const [pastMedicalConditions, setPastMedicalConditions] = useState("")
@@ -44,26 +47,18 @@ function DetailsForm() {
     const [familyMedicalHistory, setFamilyMedicalHistory] = useState("")
 
     const handleMedicalSubmit = async (e) => {
-        setRoute('medical-details/')
+
         e.preventDefault();
+        console.log(userId)
         try {
-            if (method == "login") {
-                const res = await api.post(route, { fullName: fullName, phoneNo: phoneNo, Gender: gender, Address: address });
-                localStorage.setItem(ACCESS_TOKEN, res.data.access);
-                localStorage.setItem(REFRESH_TOKEN, res.data.refresh)
-                navigate("/dashboard")
-            }
-            else {
-                navigate("/login")
-            }
+            setRoute('patient/medical-details/');
+            gettingUserId(); 
+            const res = await api.post(route, { allergies: allergies, past_medical_conditions: pastMedicalConditions, surgical_history: surgicalHistory, family_medical_history: familyMedicalHistory, user_id:userId});
+            localStorage.setItem(ACCESS_TOKEN, res.data.access);
+            localStorage.setItem(REFRESH_TOKEN, res.data.refresh)
+            navigate("/dashboard")
         } catch (error) {
-            if (error.response && error.response.status === 401) {
-                alert("Credentials are wrong");
-                navigate("/register")
-            } else {
-                // Handle other errors or display a generic error message
-                alert("An error occurred. Please try again later.");
-            }
+            console.log(error)
         }
     }
     return (
@@ -83,9 +78,13 @@ function DetailsForm() {
             {mSubmission === true ? <div>Submission Completed</div>:<div className="form-container medical-details">
                 <form onSubmit={handleMedicalSubmit}>
                     <input className="input" type="text" name='allergies' id='allergies' onChange={(e) => setAllergies(e.target.value)} value={allergies} placeholder="Allergies" />
+
                     <input className="input" type="text" name="pastMedicalConditions" id="pastMedicalConditions" onChange={(e) => setPastMedicalConditions(e.target.value)} value={pastMedicalConditions} placeholder="Past Medical Conditions" />
+                    
                     <input className="input" type="text" name="surgicalHistory" id="surgicalHistory" onChange={(e) => setSurgicalHistory(e.target.value)} value={surgicalHistory} placeholder="Surgical History" />
+                    
                     <input className="input" type="text" name="familyMedicalHistory" id="familyMedicalHistory" onChange={(e) => setFamilyMedicalHistory(e.target.value)} value={familyMedicalHistory} placeholder="Family Medical History" />
+                    
                     <button type="submit" id='submit' className='submit-btn'>Submit</button>
                 </form>
             </div>}
@@ -93,4 +92,4 @@ function DetailsForm() {
     )
 }
 
-export default DetailsForm
+export default DetailsForm;

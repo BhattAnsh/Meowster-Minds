@@ -36,7 +36,7 @@ function Dashboard() {
       }, []);
   return (
     <>
-        {details.length === 0 && mdetails.length === 0 ? <DetailsForm></DetailsForm> : <Details></Details>}
+        {details.length === 0 || mdetails.length === 0 ? <DetailsForm></DetailsForm> : <Details></Details>}
     </>
   )
 }
