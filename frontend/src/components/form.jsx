@@ -9,8 +9,6 @@ function Form({ route, method }) {
     const [userName, setUserName] = useState("")
     const [userPassword, setUserPassword] = useState("")
     const [userEmail, setUserEmail] = useState("")
-    const [detailsSubmission, setDetailsSubmission] = useState(false)
-    const [medicalDetailsSubmission, setMedicalDetailsSubmission] = useState(false)
 
     const navigate = useNavigate()
     const name = method === 'login' ? "login" : "register"
@@ -33,8 +31,7 @@ function Form({ route, method }) {
             if (error.response && error.response.status === 401) {
                 alert("Credentials are wrong");
                 navigate("/register")
-            } else {
-                // Handle other errors or display a generic error message
+            }else {
                 alert("An error occurred. Please try again later.");
             }
         }
@@ -54,7 +51,8 @@ function Form({ route, method }) {
                     </div>}
                     <div>
                         <label className='pswd-lable' htmlFor="password"><p>Password</p>
-                            <a className='forget-text'>Forgot?</a></label>
+
+                        {method === "login"?    <a className='forget-text'>Forgot?</a>:<></>}</label>
                         <input id='password' value={userPassword} type="password" name="password" placeholder='Enter Password' onChange={(e) => setUserPassword(e.target.value)} />
                     </div>
                     <div>

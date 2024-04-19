@@ -14,6 +14,7 @@ nav .menu-container{
     width: 30vw;
     justify-content: center;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 nav .search-bar{
@@ -30,6 +31,83 @@ nav .menu-container div{
     font-weight: 600;
     font-size: 16px;
 }
+nav .menu-container div:hover{
+    color: #192655;
+    transition: all 0.4s;
+}
 nav #userId {
     display: none;
+}
+nav #userName{
+    color: white;
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}
+.phone-icons{
+    display: none;
+}
+.href{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .phone-icons{display: block;}
+    .menu-container div{
+        display: none;
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .search-bar{
+        display: none;
+    }
+    .phone-search-bar{
+        margin-bottom: 20px;
+        border: none;
+        width: 80vw;
+        height: 30px;
+        padding: 5px;
+    }
+   .phone-menu{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+    .blue-nav{
+        background-color: var(--text-secondary);
+    }
+    .phone-menu .hr{
+        border: 1px solid white;
+        width: 110%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+    .phone-menu div{
+        padding: 10px;
+    }
+    .search-button{
+        border: none;
+        background-color: #87CBB9;
+        color: white;
+        width: 50px;
+        height: 30px;
+    }
+    .search-button:active{
+        transform: scale(0.9);
+    }
+    .phone-menu .href{
+        display: flex;
+        width: 110vw;
+    }
 }

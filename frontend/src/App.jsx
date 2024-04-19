@@ -5,7 +5,7 @@ import Home from './pages/home';
 import LoginSignup from './pages/loginSignup';
 import "./styles/app.css"
 import Dashboard from './pages/dashboard';
-
+import Error from './pages/error';
 
 function App() {
   function RegisterAndLogout(){
@@ -25,6 +25,7 @@ function App() {
         <Route path='/logout' element = {<Logout/>}></Route>
         <Route path='/register' element = {<RegisterAndLogout/>}></Route>
         <Route path='/dashboard' element = {<Dashboard></Dashboard>}></Route>
+        <Route path='/error' element = {<Error> </Error>}></Route>
       </Routes>
     </BrowserRouter>
     </>

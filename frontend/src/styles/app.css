@@ -1,4 +1,16 @@
+:root {
+    --color-primary: #87CBB9
+    --color-secondary: #569DAA;
+    --white: #ffff;
+  
+    --text-primary: #ffff;
+    --text-secondary: #192655;
+}
+  
 body{
     font-family: 'Poppins';
+    margin: 0;
+    background-color: var(--white);
+    width: 100vw;
     margin: 0;
 }

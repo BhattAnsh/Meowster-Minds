@@ -1,6 +1,9 @@
 *{
     font-weight: 400;
 }
+body{
+    background-color: white !important;
+}
 .login-signup-container{
     display: flex;
     align-items: center;
@@ -19,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: none;
 
 }
 .login-signup-container .form-container form{
@@ -76,3 +80,14 @@
     height: 23px !important;
 }
 
+@media screen and (max-width: 767px){
+    .svg-container{
+        display: none;
+    }
+    .login-signup-container .form-container form div input, .email-field{
+        width: 90vw;
+    }
+    .login-signup-container .form-container form div label {
+       width: 374%; 
+    }
+}

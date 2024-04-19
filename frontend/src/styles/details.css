@@ -1,43 +1,70 @@
 /* Style for form container */
-.form-container {
-    margin: 20px;
+
+body {
+  background-color: #F1F1F1 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: start;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.details-container iframe {
+  border: none;
+}
+
+.patient-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  width: 50vw;
+  padding: 40px;
+  height: 820px;
+  border-radius:20px ;
+}
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 90%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.bold {
+  font-weight: 800;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .details-container {
+    flex-direction: column;
+    column-gap: 20px;
+    align-items: center;
+    row-gap: 20px;
+
+  }
+  .patient-details-container{
+    width: 300px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
-  
-  /* Style for input fields */
-  .input {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Style for submit button */
-  .submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Style for submission message */
-  .submission-message {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #dff0d8;
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-    color: #155724;
-  }
-  
-  /* Style for form when it's hidden */
-  .hidden {
-    display: none;
-  }
-  
+}

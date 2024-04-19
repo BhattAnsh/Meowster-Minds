@@ -1,0 +1,27 @@
+
+.error-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffff; /* Primary color */
+    color: #192655; /* Secondary text color */
+    text-align: center;
+    flex-direction: column;
+}
+
+.error-icon {
+    width: 100px;
+    height: 100px;
+    fill: #192655; /* Secondary text color */
+}
+
+.error-heading {
+    font-size: 3rem;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
