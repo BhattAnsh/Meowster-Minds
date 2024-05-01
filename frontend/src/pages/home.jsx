@@ -43,7 +43,7 @@ function home() {
                 <img className='icon' src={dashBoard} alt="" />
               </div>
             </div>
-            <p>Book Beds</p>
+            <p>Your Dashboard</p>
           </div>
           <div className="feature-container">
             <div className="outer-circle">

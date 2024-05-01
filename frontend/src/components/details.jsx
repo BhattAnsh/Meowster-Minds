@@ -4,6 +4,7 @@ import Navbar from './navbar.jsx';
 import ProfileCard from './profileCard.jsx';
 import RecentHospitals from './recentHospitalCard.jsx';
 import Loading from './loading.jsx';
+import '../styles/details.css'
 
 function Details() {
   const [loading, setLoading] = useState(true);
@@ -49,8 +50,8 @@ function Details() {
               <div className="details-info">
                 <p><strong className='bold'>Name:</strong> {userBasic[0].fullName}</p>
                 <p><strong className='bold'>Phone Number:</strong> {userBasic[0].phoneNo}</p>
-                <p><strong className='bold'>Address:</strong> {userBasic[0].Address}</p>
-                <p><strong className='bold'>Gender:</strong> {userBasic[0].Gender}</p>
+                <p><strong className='bold'>Address:</strong> {userBasic[0].houseNo + ', ' + userBasic[0].area + ','+ userBasic[0].postalCode}</p>
+                <p><strong className='bold'>Gender:</strong> {userBasic[0].gender}</p>
                 <p><strong className='bold'>Allergies:</strong> {userMedical[0].allergies}</p>
                 <p><strong className='bold'>Past Medical Records:</strong> {userMedical[0].past_medical_conditions}</p>
                 <p><strong className='bold'>Surgical History:</strong> {userMedical[0].surgical_history}</p>

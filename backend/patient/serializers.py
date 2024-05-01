@@ -14,8 +14,8 @@ class UserSerializers(serializers.ModelSerializer):
 class PatientSerializer(serializers.ModelSerializer):
     class Meta:
         model = PatientDetails
-        fields = ["user","fullName", "phoneNo", "Gender", "Address", 'id']
-        extra_kwargs = {"user":{'read_only':True}}
+        fields = ["user", "fullName", "phoneNo", "gender", "houseNo", "postalCode", "area", 'id']
+        extra_kwargs = {"user": {'read_only': True}}
 
 class AppointmentSerializer(serializers.ModelSerializer):
     class Meta:

@@ -1,0 +1,104 @@
+body {
+    background-color: #F1F1F1 !important;
+}
+
+.details-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.normal-details,
+.medical-details {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto; /* Added margin to center the form */
+    border-radius: 20px;
+}
+
+.medical-details form,
+.normal-details form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.medical-details .inputs,
+.normal-details .inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.normal-details .house-details-container,
+.normal-details .general-details-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.normal-details button,
+.medical-details button {
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--color-secondary);
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hr {
+    width: 100%;
+    color: #d8d8d8;
+    height: 0.1px;
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+.normal-details input {
+    width: 200px;
+    height: 31px;
+    padding: 0px 9px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #d7d7d7;
+}
+
+.medical-details input{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #d7d7d7;
+    display: flex;
+}
+
+.label {
+    margin: 0;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.details-form-container{
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    justify-content: start;
+}
