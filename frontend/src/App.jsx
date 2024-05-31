@@ -6,6 +6,8 @@ import LoginSignup from './pages/loginSignup';
 import "./styles/app.css"
 import Dashboard from './pages/dashboard';
 import Error from './pages/error';
+import HospitalsList from './pages/hopitalList/hospitalsList';
+
 
 function App() {
   function RegisterAndLogout(){
@@ -26,6 +28,7 @@ function App() {
         <Route path='/register' element = {<RegisterAndLogout/>}></Route>
         <Route path='/dashboard' element = {<Dashboard></Dashboard>}></Route>
         <Route path='/error' element = {<Error> </Error>}></Route>
+        <Route path='/hlist' element = {<HospitalsList></HospitalsList>}></Route>
       </Routes>
     </BrowserRouter>
     </>

@@ -45,7 +45,7 @@ function Navbar() {
   return (
     <>
       <nav className={showMenu?"nav-container":"nav-container blue-nav"}>
-        <div className="logo-container">
+        <div className="logo-container p-10">
           <a href="/" className='href'><h2>Sehat Saathi</h2></a>
         </div>
         <form>
