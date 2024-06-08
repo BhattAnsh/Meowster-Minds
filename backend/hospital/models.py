@@ -1,6 +1,6 @@
 from django.db import models
 
-class Hospital(models.Model):
+class Hosptial_Basic(models.Model):
     name = models.CharField(max_length=100)
     address_line1 = models.CharField(max_length=255)
     address_line2 = models.CharField(max_length=255, blank=True, null=True)
@@ -16,3 +16,4 @@ class Hospital(models.Model):
 
     def __str__(self):
         return self.name
+    

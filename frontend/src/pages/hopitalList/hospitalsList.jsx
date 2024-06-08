@@ -8,14 +8,13 @@ function HospitalsList() {
 
   useEffect(() => {
     setHospitals(HospitalsData);
-  }, []); // Add dependency array to ensure this runs only once
-
+  }, []);
   return (
     <>
       <Navbar />
         <center><h1 className='text-6xl p-10'>Hospitals Near You</h1></center>
       <div className='p-10 flex flex-col gap-10'>
-        {hospitals.map((hospital, index) => ( // Use => instead of =
+        {hospitals.map((hospital, index) => (
           <CustomCard 
             key={index} 
             name={hospital.hospital.name} 
