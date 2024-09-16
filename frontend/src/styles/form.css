@@ -91,3 +91,6 @@ body{
        width: 374%; 
     }
 }
+.svg-container h1{
+    font-size: 40px;
+}

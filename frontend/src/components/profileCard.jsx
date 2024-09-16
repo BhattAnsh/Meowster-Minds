@@ -5,7 +5,7 @@ function ProfileCard({Name, Location}) {
     <>
     <div className='profile-container'>
         <div className="basic-details">
-            <img src="https://i.pravatar.cc/300" alt=""/> 
+            <img src="https://www.seekpng.com/png/detail/847-8474751_download-empty-profile.png" alt=""/> 
             <h3>{Name}</h3>
             <div>Edit your Profile</div>
         </div>

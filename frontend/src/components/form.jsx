@@ -58,9 +58,13 @@ function Form({ route, method }) {
                     <div>
                         <button className='form-button' type='submit'>{name.toUpperCase()}</button>
                     </div>
+                    <center>
+                    {method === 'login'? <a href='/register'>SignUp?</a>:<a href='/login'>Login?</a> }
+                    </center>
                 </form>
             </div>
             <div className='svg-container'>
+                <center><h1>SEHAT SAATHI</h1></center>
                 <img src={image} alt="" className='login-png' />
             </div>
         </div>

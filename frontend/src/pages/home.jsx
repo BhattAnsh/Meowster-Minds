@@ -1,12 +1,14 @@
-import React from 'react'
-import Navbar from '../components/navbar'
-import image from '../assets/Home_logo.png'
-import heroImage from '../assets/hero-image.png'
-import '../styles/home.css'
-import bedsIcon from '../assets/icons/night_shelter.svg'
-import dashBoard from '../assets/icons/Dashboard.svg'
-import axios from 'axios'
-import GettingLocation from '../components/gettingLocation'
+import React from 'react';
+import Navbar from '../components/navbar';
+import image from '../assets/Home_logo.png';
+import heroImage from '../assets/hero-image.png';
+import '../styles/home.css';
+import bedsIcon from '../assets/icons/night_shelter.svg';
+import dashBoard from '../assets/icons/Dashboard.svg';
+import axios from 'axios';
+import GettingLocation from '../components/gettingLocation';
+import bmi from '../assets/icons/body_system.svg';
+import lab from '../assets/icons/article.svg';
 
 function home() {
 
@@ -48,18 +50,18 @@ function home() {
           <div className="feature-container">
             <div className="outer-circle">
               <div className="inner-circle">
-                <img className='icon' src={bedsIcon} alt="" />
+                <img className='icon' src={bmi} alt="" />
               </div>
             </div>
-            <p>Book Beds</p>
+            <p>BMI Calculation</p>
           </div>
           <div className="feature-container">
             <div className="outer-circle">
               <div className="inner-circle">
-                <img className='icon' src={bedsIcon} alt="" />
+                <img className='icon' src={lab} alt="" />
               </div>
             </div>
-            <p>Book Beds</p>
+            <p>Lab Reports</p>
           </div>
         </div>
       </div>
