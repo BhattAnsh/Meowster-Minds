@@ -1,0 +1,695 @@
+[
+    {
+      "hospital": {
+        "name": "Metro Healthcare Hospital",
+        "unique_id": "MHH123456",
+        "location": {
+          "address": "Plot No. 78, Sector 18, Noida, Uttar Pradesh, 201301",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "pincode": "201301"
+        },
+        "contact_information": {
+          "phone_number": "+91-9876543210",
+          "email": "contact@metrohealthcare.com",
+          "website": "www.metrohealthcare.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 50,
+          "available_beds": 20
+        },
+        "ICU": {
+          "total_beds": 15,
+          "available_beds": 5
+        },
+        "Maternity Ward": {
+          "total_beds": 20,
+          "available_beds": 10
+        },
+        "Pediatric Ward": {
+          "total_beds": 25,
+          "available_beds": 15
+        },
+        "VIP Ward": {
+          "total_beds": 10,
+          "available_beds": 3
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Rakesh Gupta",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 10 AM - 4 PM",
+          "contact_number": "+91-9988776655"
+        },
+        {
+          "name": "Dr. Anjali Sharma",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 9 AM - 2 PM",
+          "contact_number": "+91-9876541234"
+        },
+        {
+          "name": "Dr. Neha Kapoor",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Thu: 11 AM - 3 PM",
+          "contact_number": "+91-9966332211"
+        },
+        {
+          "name": "Dr. Amit Verma",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 12 PM - 6 PM",
+          "contact_number": "+91-9988223344"
+        },
+        {
+          "name": "Dr. Priya Singh",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Fri: 1 PM - 5 PM",
+          "contact_number": "+91-9876623456"
+        },
+        {
+          "name": "Dr. Rahul Jain",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 10 AM - 3 PM",
+          "contact_number": "+91-9876654321"
+        }
+      ],
+      "blood_bank": {
+        "A+": 20,
+        "A-": 5,
+        "B+": 15,
+        "B-": 7,
+        "AB+": 10,
+        "AB-": 3,
+        "O+": 25,
+        "O-": 8
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    },
+    {
+      "hospital": {
+        "name": "City Care Hospital",
+        "unique_id": "CCH789012",
+        "location": {
+          "address": "Block A, Sector 10, Dwarka, New Delhi, 110075",
+          "city": "New Delhi",
+          "state": "Delhi",
+          "pincode": "110075"
+        },
+        "contact_information": {
+          "phone_number": "+91-9123456789",
+          "email": "info@citycare.com",
+          "website": "www.citycare.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 60,
+          "available_beds": 25
+        },
+        "ICU": {
+          "total_beds": 20,
+          "available_beds": 8
+        },
+        "Maternity Ward": {
+          "total_beds": 30,
+          "available_beds": 12
+        },
+        "Pediatric Ward": {
+          "total_beds": 20,
+          "available_beds": 8
+        },
+        "VIP Ward": {
+          "total_beds": 15,
+          "available_beds": 5
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Kavita Rao",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 9 AM - 5 PM",
+          "contact_number": "+91-9812345678"
+        },
+        {
+          "name": "Dr. Ashish Mehra",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 8 AM - 1 PM",
+          "contact_number": "+91-9817654321"
+        },
+        {
+          "name": "Dr. Sushmita Banerjee",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Fri: 10 AM - 4 PM",
+          "contact_number": "+91-9876554321"
+        },
+        {
+          "name": "Dr. Anil Kumar",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 1 PM - 7 PM",
+          "contact_number": "+91-9123445566"
+        },
+        {
+          "name": "Dr. Pooja Sharma",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Sat: 12 PM - 4 PM",
+          "contact_number": "+91-9811223344"
+        },
+        {
+          "name": "Dr. Vikram Singh",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 9 AM - 3 PM",
+          "contact_number": "+91-9812233445"
+        }
+      ],
+      "blood_bank": {
+        "A+": 25,
+        "A-": 10,
+        "B+": 20,
+        "B-": 6,
+        "AB+": 12,
+        "AB-": 4,
+        "O+": 30,
+        "O-": 10
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    },
+    {
+      "hospital": {
+        "name": "Sunshine Hospital",
+        "unique_id": "SH345678",
+        "location": {
+          "address": "Sector 12, Vasundhara, Ghaziabad, Uttar Pradesh, 201012",
+          "city": "Ghaziabad",
+          "state": "Uttar Pradesh",
+          "pincode": "201012"
+        },
+        "contact_information": {
+          "phone_number": "+91-9345678901",
+          "email": "contact@sunshinehospital.com",
+          "website": "www.sunshinehospital.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 40,
+          "available_beds": 15
+        },
+        "ICU": {
+          "total_beds": 10,
+          "available_beds": 4
+        },
+        "Maternity Ward": {
+          "total_beds": 25,
+          "available_beds": 9
+        },
+        "Pediatric Ward": {
+          "total_beds": 30,
+          "available_beds": 12
+        },
+        "VIP Ward": {
+          "total_beds": 5,
+          "available_beds": 2
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Sanjay Singh",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 8 AM - 2 PM",
+          "contact_number": "+91-9345567890"
+        },
+        {
+          "name": "Dr. Reena Gupta",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 9 AM - 1 PM",
+          "contact_number": "+91-9345672345"
+        },
+        {
+          "name": "Dr. Nisha Jain",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Fri: 11 AM - 5 PM",
+          "contact_number": "+91-9345562323"
+        },
+        {
+          "name": "Dr. Rajesh Kumar",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 10 AM - 4 PM",
+          "contact_number": "+91-9345567654"
+        },
+        {
+          "name": "Dr. Meena Verma",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Fri: 9 AM - 1 PM",
+          "contact_number": "+91-9345656565"
+        },
+        {
+          "name": "Dr. Anupama Singh",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 11 AM - 3 PM",
+          "contact_number": "+91-9345765765"
+        }
+      ],
+      "blood_bank": {
+        "A+": 18,
+        "A-": 6,
+        "B+": 22,
+        "B-": 5,
+        "AB+": 14,
+        "AB-": 2,
+        "O+": 28,
+        "O-": 7
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    },
+    {
+      "hospital": {
+        "name": "Aarogyam Hospital",
+        "unique_id": "AH901234",
+        "location": {
+          "address": "Sector 8, Faridabad, Haryana, 121006",
+          "city": "Faridabad",
+          "state": "Haryana",
+          "pincode": "121006"
+        },
+        "contact_information": {
+          "phone_number": "+91-9456781234",
+          "email": "support@aarogyam.com",
+          "website": "www.aarogyam.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 45,
+          "available_beds": 18
+        },
+        "ICU": {
+          "total_beds": 12,
+          "available_beds": 5
+        },
+        "Maternity Ward": {
+          "total_beds": 20,
+          "available_beds": 7
+        },
+        "Pediatric Ward": {
+          "total_beds": 25,
+          "available_beds": 10
+        },
+        "VIP Ward": {
+          "total_beds": 8,
+          "available_beds": 2
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Manoj Tiwari",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 9 AM - 3 PM",
+          "contact_number": "+91-9456677889"
+        },
+        {
+          "name": "Dr. Sunita Rao",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 8 AM - 2 PM",
+          "contact_number": "+91-9456782345"
+        },
+        {
+          "name": "Dr. Priya Kumar",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Fri: 10 AM - 5 PM",
+          "contact_number": "+91-9456678998"
+        },
+        {
+          "name": "Dr. Ashok Verma",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 11 AM - 4 PM",
+          "contact_number": "+91-9456789090"
+        },
+        {
+          "name": "Dr. Rekha Singh",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Fri: 12 PM - 4 PM",
+          "contact_number": "+91-9456789987"
+        },
+        {
+          "name": "Dr. Vipul Sharma",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 10 AM - 3 PM",
+          "contact_number": "+91-9456781212"
+        }
+      ],
+      "blood_bank": {
+        "A+": 22,
+        "A-": 7,
+        "B+": 18,
+        "B-": 6,
+        "AB+": 11,
+        "AB-": 3,
+        "O+": 26,
+        "O-": 9
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    },
+    {
+      "hospital": {
+        "name": "LifeCare Hospital",
+        "unique_id": "LCH567890",
+        "location": {
+          "address": "Sector 22, Gurgaon, Haryana, 122015",
+          "city": "Gurgaon",
+          "state": "Haryana",
+          "pincode": "122015"
+        },
+        "contact_information": {
+          "phone_number": "+91-9654321098",
+          "email": "contact@lifecare.com",
+          "website": "www.lifecare.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 50,
+          "available_beds": 20
+        },
+        "ICU": {
+          "total_beds": 15,
+          "available_beds": 5
+        },
+        "Maternity Ward": {
+          "total_beds": 20,
+          "available_beds": 10
+        },
+        "Pediatric Ward": {
+          "total_beds": 25,
+          "available_beds": 15
+        },
+        "VIP Ward": {
+          "total_beds": 10,
+          "available_beds": 3
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Nitin Sharma",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 10 AM - 4 PM",
+          "contact_number": "+91-9656781234"
+        },
+        {
+          "name": "Dr. Poonam Singh",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 9 AM - 2 PM",
+          "contact_number": "+91-9654326789"
+        },
+        {
+          "name": "Dr. Ankit Jain",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Thu: 11 AM - 3 PM",
+          "contact_number": "+91-9656781122"
+        },
+        {
+          "name": "Dr. Mehul Verma",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 12 PM - 6 PM",
+          "contact_number": "+91-9654325566"
+        },
+        {
+          "name": "Dr. Divya Chopra",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Fri: 1 PM - 5 PM",
+          "contact_number": "+91-9656788899"
+        },
+        {
+          "name": "Dr. Kunal Mehta",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 10 AM - 3 PM",
+          "contact_number": "+91-9656781221"
+        }
+      ],
+      "blood_bank": {
+        "A+": 25,
+        "A-": 8,
+        "B+": 20,
+        "B-": 7,
+        "AB+": 10,
+        "AB-": 4,
+        "O+": 30,
+        "O-": 8
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    },
+    {
+      "hospital": {
+        "name": "Global Health Hospital",
+        "unique_id": "GHH678901",
+        "location": {
+          "address": "Sector 11, Noida, Uttar Pradesh, 201301",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "pincode": "201301"
+        },
+        "contact_information": {
+          "phone_number": "+91-9345678901",
+          "email": "contact@globalhealth.com",
+          "website": "www.globalhealth.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 55,
+          "available_beds": 22
+        },
+        "ICU": {
+          "total_beds": 20,
+          "available_beds": 6
+        },
+        "Maternity Ward": {
+          "total_beds": 25,
+          "available_beds": 9
+        },
+        "Pediatric Ward": {
+          "total_beds": 30,
+          "available_beds": 12
+        },
+        "VIP Ward": {
+          "total_beds": 15,
+          "available_beds": 5
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Amit Kapoor",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 8 AM - 3 PM",
+          "contact_number": "+91-9345567890"
+        },
+        {
+          "name": "Dr. Shweta Gupta",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 10 AM - 2 PM",
+          "contact_number": "+91-9345672345"
+        },
+        {
+          "name": "Dr. Poonam Jain",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Fri: 9 AM - 1 PM",
+          "contact_number": "+91-9345562323"
+        },
+        {
+          "name": "Dr. Rajiv Kumar",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 11 AM - 4 PM",
+          "contact_number": "+91-9345567654"
+        },
+        {
+          "name": "Dr. Neha Verma",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Fri: 9 AM - 12 PM",
+          "contact_number": "+91-9345656565"
+        },
+        {
+          "name": "Dr. Arjun Singh",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 11 AM - 3 PM",
+          "contact_number": "+91-9345765765"
+        }
+      ],
+      "blood_bank": {
+        "A+": 18,
+        "A-": 7,
+        "B+": 22,
+        "B-": 5,
+        "AB+": 12,
+        "AB-": 3,
+        "O+": 28,
+        "O-": 7
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    },
+    {
+      "hospital": {
+        "name": "Fortis Memorial Hospital",
+        "unique_id": "FMH234567",
+        "location": {
+          "address": "Sector 44, Gurgaon, Haryana, 122002",
+          "city": "Gurgaon",
+          "state": "Haryana",
+          "pincode": "122002"
+        },
+        "contact_information": {
+          "phone_number": "+91-9456781234",
+          "email": "support@fortismemorial.com",
+          "website": "www.fortismemorial.com"
+        }
+      },
+      "bed_availability": {
+        "General Ward": {
+          "total_beds": 60,
+          "available_beds": 25
+        },
+        "ICU": {
+          "total_beds": 20,
+          "available_beds": 7
+        },
+        "Maternity Ward": {
+          "total_beds": 30,
+          "available_beds": 12
+        },
+        "Pediatric Ward": {
+          "total_beds": 20,
+          "available_beds": 8
+        },
+        "VIP Ward": {
+          "total_beds": 15,
+          "available_beds": 5
+        }
+      },
+      "doctors": [
+        {
+          "name": "Dr. Sunil Tiwari",
+          "specialty": "Cardiology",
+          "availability_hours": "Mon-Fri: 9 AM - 5 PM",
+          "contact_number": "+91-9456677889"
+        },
+        {
+          "name": "Dr. Nidhi Rao",
+          "specialty": "Pediatrics",
+          "availability_hours": "Mon-Sat: 8 AM - 1 PM",
+          "contact_number": "+91-9456782345"
+        },
+        {
+          "name": "Dr. Smita Kumar",
+          "specialty": "Obstetrics & Gynecology",
+          "availability_hours": "Tue-Fri: 10 AM - 5 PM",
+          "contact_number": "+91-9456678998"
+        },
+        {
+          "name": "Dr. Ashok Mehta",
+          "specialty": "Orthopedics",
+          "availability_hours": "Mon-Fri: 11 AM - 4 PM",
+          "contact_number": "+91-9456789090"
+        },
+        {
+          "name": "Dr. Rajni Singh",
+          "specialty": "Neurology",
+          "availability_hours": "Wed-Fri: 12 PM - 4 PM",
+          "contact_number": "+91-9456789987"
+        },
+        {
+          "name": "Dr. Vikas Sharma",
+          "specialty": "General Surgery",
+          "availability_hours": "Mon-Sat: 10 AM - 3 PM",
+          "contact_number": "+91-9456781212"
+        }
+      ],
+      "blood_bank": {
+        "A+": 22,
+        "A-": 6,
+        "B+": 18,
+        "B-": 5,
+        "AB+": 11,
+        "AB-": 4,
+        "O+": 26,
+        "O-": 8
+      },
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Obstetrics & Gynecology",
+        "Orthopedics",
+        "Neurology",
+        "General Surgery",
+        "Dermatology",
+        "ENT (Ear, Nose, Throat)",
+        "Oncology",
+        "Radiology"
+      ]
+    }
+]
